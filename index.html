@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3' crossorigin='anonymous'>
+  <link rel='stylesheet' href='./public/index.css'>
+  <link rel='shortcut icon' type='image/jpg' href='./public/favicon.ico'/>
+  <title>semoizm</title>
+</head>
+<body>
+  
+  <div class='info'>
+    <a><strong>Bekle!</strong> Müziğin süresi bitti, tekrar başlatmak için tekrar butona tıkla.</a> 
+  </div>
+  
+  <div class='semoizm-outer'>
+    <div class="semoizm-header">
+      <img class="header-icon" src="./public/favicon.ico" alt="logo">
+      <div class="header-items">
+        <a class="header-items-white" href="/">Anasayfa</a>
+        <a class="header-items-white" href="/playlist.html">Playlist</a>
+      </div>
+      <div class="theme-toggler">
+        <span id="theme-toggler-emoji">⚪</span>
+      </div>
+    </div>
+    
+    <div class='semoizm-middle'>
+      <div class='semoizm-inner'>
+        <h1>Merhaba, ben semoizm 👋</h1>
+        <h2>Paylaşımlarım için beni takip edin.</h2>
+        <div class='semoizm-links'>
+          <a target='_blank' href='https://discord.com/users/725465882402226208'>Discord</a>
+          <a target='_blank' href='https://github.com/semoizm'>GitHub</a>
+          <a target='_blank' href='https://instagram.com/semoizm'>Instagram</a>
+          <a target='_blank' href='https://steamcommunity.com/id/semoizm'>Steam</a>
+          <a target='_blank' href='https://sptfy.com/semoizm'>Spotify</a>
+        </div>
+          <audio id='audio'>
+            <source src='./public/rick.mp3' type='audio/mpeg'>
+          </audio>
+          <button onClick='audio()' class='btn btn-primary mx-auto col-7 mt-10 fs-5' id='play-button' type='button'>Müzik Dinle</button>
+          <footer>Forum Projem <a class='link' target='_blank' href='https://UstaGamer.com'>UstaGamer.com</a>.</footer>
+        </div>
+    </div>
+  </div>
+  
+  <script type='text/javascript' src="./public/index.js"></script>
+  <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p' crossorigin='anonymous'></script>
+</body>
+</html>

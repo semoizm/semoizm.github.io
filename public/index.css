@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto';
+}
+
+html {
+  display: block;
+}
+
+body {
+  background-color: #080808;
+  padding: 0;
+  margin: 0;
+  transition: background 0.2s ease;
+}
+
+.info {
+  opacity: 0;
+  position: relative;
+  transform: translate(2%, 30%);
+  transition: opacity 0.4s ease;
+  background-color: rgb(82, 163, 129);
+  width: fit-content;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.info:focus {
+  transform: translate(2%, -30%) !important;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.semoizm-outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.semoizm-inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  color: white;
+  text-align: center;
+}
+
+.semoizm-inner > .semoizm-links > a {
+  text-decoration: none;
+  color: #6495ed;
+  font-weight: bold;
+  margin: 10px;
+  transition: 0.2s;
+}
+
+a:-webkit-any-link {
+  cursor: pointer;
+}
+  
+.semoizm-middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+h1 {
+  display: block;
+  font-size: 2rem;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5rem;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.semoizm-links {
+  display: flex;
+}
+
+.semoizm-links > a:hover {
+  transform: translateY(-5px);
+  color: #1b60df;
+}
+
+.btn {
+  position: relative;
+  transform: translateY(15px);
+  transition: all 0.1s ease;
+}
+
+button:hover {
+  transform: translateY(20px);
+  outline: 0;
+  box-shadow: 0 0 0 .25rem rgba(13,110,253,.25)
+}
+
+@media screen and (max-width: 420px) {
+  .semoizm-links {
+    display: block;
+  }
+
+  button {
+    display: none;
+  }
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 7px;
+  transform: translate(25%);
+}
+
+@media screen and (max-height: 325px) {
+  .btn {
+    margin-top: -2.7%;
+  }
+}
+
+@media screen and (max-height: 320px) {
+  footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .semoizm-header {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+
+  button {
+    margin-top: -15px;
+  }
+
+  .semoizm-links {
+    margin-top: -15px;
+  }
+
+  .info {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .theme-toggler > span {
+    transform: translateX(-15px);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .semoizm-inner {
+    width: 300px;
+  }
+
+  .btn {
+    display: none;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: #6495ed;
+  position: relative;
+  transition: all 0.2s ease;
+  top: 0;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #1b60df;
+  top: -5px;
+}
+
+.theme-toggler > span {
+  cursor: pointer;
+  left: 97%;
+  top: 30%;
+  position: absolute;
+}
+
+.theme-toggler > span {
+  background: none;
+  user-select: none;
+}
+
+.semoizm-header {
+  background-color: #0c0c0c;
+  height: 60px;
+  transition: background 0.2s ease;
+  position: absolute;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 100%;
+}
+
+.header-icon {
+  margin-left: 15px;
+  margin-top: 10px;
+  width: 40px;
+  cursor: pointer;
+  position: absolute;
+  transition: transform 0.2s ease;
+}
+
+.header-icon:hover {
+  transform: scale(1.2) rotate(-20deg);
+}
+
+.header-items {
+  cursor: pointer;
+  margin-left: 67px;
+  margin-top: 10px;
+}
+
+.header-items > a {
+  display: inline-block;
+  position: relative;
+  padding: 7px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  transition: color 0.1s ease;
+}
+
+.header-items-white:hover {
+  color: #c5c4c4 !important;
+}
+
+.header-items-black:hover {
+  color: #727272 !important;
+}

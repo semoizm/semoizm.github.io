@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto';
+}
+
+html {
+  display: block;
+}
+
+body {
+  color: white;
+  background-color: #080808;
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.semoizm-outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.semoizm-inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  color: white;
+  text-align: center;
+}
+  
+.semoizm-middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.info {
+  opacity: 0;
+  transition: opacity 0.2s;
+  top: 100px;
+  left: 6%;
+  text-decoration: none;
+  position: relative;
+  color: white;
+}
+
+@media screen and (max-width: 180px) {
+  .info {
+    opacity: 0 !important;
+  }
+}
+
+@media screen and (max-width: 230px) {
+  .semoizm-inner {
+    opacity: 0;
+  }
+
+  .info {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-height: 390px) {
+  .semoizm-inner {
+    margin-top: 3% !important;
+  }
+}
+
+
+@media screen and (max-width: 390px) {
+  .semoizm-inner {
+    margin-top: 10% !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .semoizm-inner {
+    margin-top: 10% !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .semoizm-inner {
+    margin-top: 2% !important;
+  }
+}
+
+@media screen and (max-height: 406px) {
+  .semoizm-inner {
+    position: relative;
+    top: 10% !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .semoizm-inner {
+    position: relative;
+    top: -3% !important;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .semoizm-inner {
+    position: relative;
+    top: -5% !important;
+  }
+}
+
+@media screen and (max-height: 507px) {
+  .semoizm-inner {
+    width: 300px;
+    transform: translateY(10%) !important;
+  }
+}
+
+.semoizm-header {
+  background-color: #0c0c0c;
+  height: 60px;
+  position: absolute;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 100%;
+}
+
+.header-icon {
+  margin-left: 15px;
+  margin-top: 10px;
+  width: 40px;
+  cursor: pointer;
+  position: absolute;
+  transition: transform 0.2s ease;
+}
+
+.header-icon:hover {
+  transform: scale(1.2) rotate(-20deg);
+}
+
+.header-items {
+  cursor: pointer;
+  margin-left: 67px;
+  margin-top: 10px;
+}
+
+.header-items > a {
+  display: inline-block;
+  position: relative;
+  padding: 7px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  transition: color 0.1s ease;
+}
+
+.header-items > a:hover {
+  color: #c5c4c4 !important;
+}
