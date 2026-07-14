@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto';
+}
+
+html {
+  display: block;
+}
+
+body {
+  background-color: #080808;
+  padding: 0;
+  margin: 0;
+  transition: background 0.2s ease;
+}
+
+.info {
+  opacity: 0;
+  position: relative;
+  transform: translate(2%, 30%);
+  transition: opacity 0.4s ease;
+  background-color: rgb(82, 163, 129);
+  width: fit-content;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.info:focus {
+  transform: translate(2%, -30%) !important;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.semoizm-outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.semoizm-inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  color: white;
+  text-align: center;
+}
+
+.semoizm-inner > .semoizm-links > a {
+  text-decoration: none;
+  color: #f1c40f;
+  font-weight: bold;
+  margin: 10px;
+  transition: 0.2s;
+}
+
+a:-webkit-any-link {
+  cursor: pointer;
+}
+  
+.semoizm-middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+h1 {
+  display: block;
+  font-size: 2rem;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5rem;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.semoizm-links {
+  display: flex;
+}
+
+.semoizm-links > a:hover {
+  transform: translateY(-5px);
+  color: #d6ab00;
+}
+
+.btn {
+  position: relative;
+  transform: translateY(15px);
+  transition: all 0.1s ease;
+}
+
+button:hover {
+  transform: translateY(20px);
+  outline: 0;
+  box-shadow: 0 0 0 .25rem rgba(13,110,253,.25)
+}
+
+@media screen and (max-width: 420px) {
+  .semoizm-links {
+    display: block;
+  }
+
+  button {
+    display: none;
+  }
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    position: absolute; /* Veya relative */
+    bottom: 7px;       /* Sayfanın en altına yapıştırır */
+    left: 0;
+    color: #ffffff;        /* Okunabilirlik için hafif gri */
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #f1c40f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-height: 325px) {
+  .btn {
+    margin-top: -2.7%;
+  }
+}
+
+@media screen and (max-height: 320px) {
+  footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .semoizm-header {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+
+  button {
+    margin-top: -15px;
+  }
+
+  .semoizm-links {
+    margin-top: -15px;
+  }
+
+  .info {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .theme-toggler > span {
+    transform: translateX(-15px);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .semoizm-inner {
+    width: 300px;
+  }
+
+  .btn {
+    display: none;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: #f1c40f;
+  position: relative;
+  transition: all 0.2s ease;
+  top: 0;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #d6ab00;
+  top: -5px;
+}
+
+.theme-toggler > span {
+  cursor: pointer;
+  left: 97%;
+  top: 30%;
+  position: absolute;
+}
+
+.theme-toggler > span {
+  background: none;
+  user-select: none;
+}
+
+.semoizm-header {
+  background-color: #0c0c0c;
+  height: 60px;
+  transition: background 0.2s ease;
+  position: absolute;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 100%;
+}
+
+.header-icon {
+  margin-left: 15px;
+  margin-top: 10px;
+  width: 40px;
+  cursor: pointer;
+  position: absolute;
+  transition: transform 0.2s ease;
+}
+
+.header-icon:hover {
+  transform: scale(1.2) rotate(-20deg);
+}
+
+.header-items {
+  cursor: pointer;
+  margin-left: 67px;
+  margin-top: 10px;
+}
+
+.header-items > a {
+  display: inline-block;
+  position: relative;
+  padding: 7px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  transition: color 0.1s ease;
+}
+
+.header-items-white:hover {
+  color: #c5c4c4 !important;
+}
+
+.header-items-black:hover {
+  color: #727272 !important;
+}
+.semoizm-middle {
+  display: flex;
+  justify-content: center; /* Yatayda ortalar */
+  align-items: center;     /* Dikeyde ortalar (isteğe bağlı) */
+  text-align: center;      /* İçerideki metinlerin de ortalı görünmesini sağlar */
+  width: 100%;             /* Genişliği kapsama göre ayarlar */
+}
+
+.semoizm-links {
+  display: flex;
+  justify-content: center; /* Linkleri yan yana getirip ortalar */
+  gap: 15px;               /* Linkler arasına boşluk bırakır */
+}
+
+nav { padding: 20px; display: flex; gap: 20px; }
+nav a { color: #888; text-decoration: none; }
+nav a.active { color: #f1c40f; font-weight: bold; }
+
+.container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+.projects-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 25px; 
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+.card:hover { transform: translateY(-10px); border-color: #f1c40f; }
+.card h3 { margin-top: 0; color: #f1c40f; }
+
+.projects-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 25px; 
+}
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.card:hover { transform: translateY(-10px); border-color: #f1c40f; }
+.card h3 { color: #f1c40f; margin-top: 0; }
+.card p { color: #ccc; font-size: 0.9em; }
+
+.card p {
+    color: #ccc;
+    font-size: 0.9em;
+    
+    /* Metni 3 satır ile sınırla, gerisini "..." yap */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.container h1 {
+    text-align: center; /* Yazıyı kendi kutusu içinde ortalar */
+    margin: 0 auto 30px auto; /* Üstten/alttan boşluk verir ve yatayda ortalar */
+    max-width: 1000px; /* Grid yapısıyla aynı genişlikte tutar */
+    color: white;
+}
+.container {
+    margin-top: 100px; /* Header yüksekliğinden biraz fazla olsun */
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+body {
+    background-color: #080808; /* Arka plan rengi */
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+} 
